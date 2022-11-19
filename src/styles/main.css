@@ -1,0 +1,219 @@
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    list-style: none;
+    display: flex;
+    margin-top: 1.4vw;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-logo{
+    width: 9vw;
+    margin-left: -1.2vw;
+}
+.nav-link{
+    text-decoration: none;
+    margin-right: 3vw;
+    letter-spacing: -0.2px !important;
+    font-weight: 700 !important;
+    font-size: 0.93vw;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-title{
+    font-size: 2.7vw;
+    text-transform: capitalize;
+}
+
+.button{
+    text-transform: none !important ;
+    font-weight: bold !important;
+    padding:0.7vw 2.2vw !important;
+    background-color: #11a683 !important ;
+    box-shadow: 0 0 !important ;
+    font-size: 0.962vw !important;
+    letter-spacing: -0.3px !important;
+    border-radius: 0.4vw !important;
+    font-family: 'Inter', sans-serif !important;
+
+}
+.header-button:hover{
+    background: #15c39a !important;
+}
+
+.header-button{
+    text-transform: none !important ;
+    font-weight: bold !important;
+    padding:0.7vw 2.2vw !important;
+    background-color: #11a683 !important ;
+    box-shadow: 0 0 !important ;
+    font-size: 0.962vw !important;
+    letter-spacing: -0.3px !important;
+    
+    font-family: 'Inter', sans-serif !important;
+    border-radius: 0.4vw !important;
+}
+
+.carousel{
+
+}
+
+.carousel-bg{
+    position: absolute;
+    z-index: -1;
+    margin-top: -15vw;
+    margin-left: -10vw;
+}
+.carousel-section{
+display: flex;
+flex-direction: row;
+}
+.carousel-images{
+    display: flex;
+    flex-direction: column;
+}
+.carousel-slide-1{
+    position: absolute;
+    margin-left: 21vw;
+    box-shadow: 0 14px 55px rgb(109 117 141 / 20%);
+    margin-top: 6vw;
+    transition: appear 5s alternate 1 !important;
+}
+.carousel-slide-2{
+    position: absolute;
+    box-shadow: 0 14px 55px rgb(109 117 141 / 20%);
+    
+    margin-left: 24vw;
+    margin-top: 18vw;
+}
+
+.tabs-list{
+    margin-top: 7vw;
+    margin-left: 56.5vw;
+    list-style: none;
+}
+.tab-list-item{
+    
+}
+.tab-list-heading{
+    font-size: 1.05vw;
+    margin: 1.3vw 0 0.3vw 0;
+    color: rgb(74, 110, 224);
+}
+.tab-list-text{
+    font-size: 0.96vw;
+    margin-top: 0;
+    letter-spacing: -0.2px;
+    margin-bottom: 1.3vw;
+    color: #4D536E;
+}
+.tab-progress-bar{
+    height: 1.5px;
+    background: #e7e9f5;
+    border-radius: 1px;
+    width: 100%;
+}
+
+.pricing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #fff !important;
+    width: 100% !important;
+    z-index: 2 !important;
+    margin-top: 8.8vw;
+}
+.pricing-title{
+    font-size: 1.913vw;
+    margin: 0vw;
+}
+
+.pricing-subtitle{
+font-size: 1.22vw;
+margin-top: 1vw;
+letter-spacing: -0.5px;
+margin-bottom: 0.5vw;
+}
+.pricing-cards{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0vw;
+}
+
+.pricing-card{
+    width: 20vw;
+    margin: 1vw;
+    display: flex;
+    border: 0px !important;
+    box-shadow: 0 0 !important;
+}
+.card-pretext{
+    color: gray;
+    text-transform: uppercase;
+    font-size: 0.75vw;
+    margin-bottom: 0.5vw;
+}
+.card-title{
+    font-size: 1.6vw;
+    margin: 0vw;
+}
+.card-text{
+    margin: 0.5vw 0vw 1vw 0;
+    font-size: 1vw;
+    height: 3vw;
+    color: black;
+    letter-spacing: -0.1px;
+    line-height: 1.5vw;
+}
+.card-button{
+    padding:0.7vw 1.7vw !important;
+    width: 18vw;
+}
+.card-list{
+    list-style: none;
+    padding: 0vw;
+}
+.card-list-item{
+    display: flex;
+    padding: 0vw;
+    margin: 0.75vw 0;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.card-list-text{
+    font-size: 0.93vw;
+    margin: 0vw;
+    margin-left: 0.2vw;
+}
+.img-tick{
+    width: 1.24vw;
+    height: 1.22vw;
+
+}
+
+.button-disabled{
+    background: #f0f2fc !important;
+    color: #c6cbde !important;
+    font-family: 'Inter' !important;
+    cursor: no-drop !important;
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
