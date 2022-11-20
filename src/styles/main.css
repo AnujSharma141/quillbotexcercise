@@ -80,6 +80,7 @@ flex-direction: row;
 .carousel-slide-1{
     position: absolute;
     margin-left: 21vw;
+    width: 25vw;
     box-shadow: 0 14px 55px rgb(109 117 141 / 20%);
     margin-top: 6vw;
 
@@ -87,6 +88,7 @@ flex-direction: row;
 }
 .carousel-slide-2{
     position: absolute;
+    width: 26vw;
     box-shadow: 0 14px 55px rgb(109 117 141 / 20%);
     animation: slideinafter 0.5s cubic-bezier(.83,.31,.58,.91) forwards !important;
     margin-left: 24vw;
@@ -256,3 +258,282 @@ margin-bottom: 0.5vw;
         margin-top: 18vw;
     }
 }
+
+@media only screen and (max-width: 600px) {
+   body{
+    width: max-content;
+   }
+    #root{
+        width: 100%;
+        display: flex;
+    }
+    .nav{
+        list-style: none;
+        display: flex;
+        margin-top: 15vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-logo{
+        width: 70vw;
+        margin-left: -1.2vw;
+    }
+    .nav-link{
+        text-decoration: none;
+        margin-right: 10vw;
+        letter-spacing: -0.2px !important;
+        font-weight: 700 !important;
+        margin-top: -5vw;
+        font-size: 9vw;
+    }
+    .header{
+        width: 250vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header-title{
+        font-size: 20vw;
+        margin-top: 30vw;
+        text-transform: capitalize;
+        text-align: center;
+    }
+    
+    .button{
+        text-transform: none !important ;
+        font-weight: bold !important;
+        padding:0.7vw 2.2vw !important;
+        background-color: #11a683 !important ;
+        box-shadow: 0 0 !important ;
+        font-size: 10vw !important;
+        letter-spacing: -0.3px !important;
+        border-radius: 0.4vw !important;
+        font-family: 'Inter', sans-serif !important;
+    
+    }
+    .header-button:hover{
+        background: #15c39a !important;
+    }
+    
+    .header-button{
+        text-transform: none !important ;
+        font-weight: bold !important;
+        padding: 5vw 15vw !important;
+        background-color: #11a683 !important ;
+        box-shadow: 0 0 !important ;
+        margin-top: 15vw !important;
+        font-size: 8vw !important;
+        letter-spacing: -0.3px !important;
+        
+        font-family: 'Inter', sans-serif !important;
+        border-radius: 4vw !important;
+    }
+    
+    
+    .carousel-bg{
+        position: absolute;
+        z-index: -1;
+        margin-top: -15vw;
+        margin-left: -10vw;
+    }
+    .carousel-section{
+    display: flex;
+    flex-direction: column;
+    }
+    .carousel-images{
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel-slide-1{
+        position: absolute;
+        margin-left: 26vw !important;
+        width: 160vw;
+        box-shadow: 0 14px 55px rgb(109 117 141 / 20%);
+        margin-top: 34vw !important;
+    
+        animation: slidein 0.3s linear forwards !important;
+    }
+    .carousel-slide-2{
+        position: absolute;
+        width: 184vw !important;
+        box-shadow: 0 14px 55px rgb(109 117 141 / 20%);
+        animation: slideinafter 0.5s cubic-bezier(.83,.31,.58,.91) forwards !important;
+        margin-left: 40vw;
+        margin-top: 116vw !important;
+    }
+    
+    .tabs-list{
+        width:70%;
+        margin-top: 220vw;
+        margin-left: 10%;
+        list-style: none;
+    }
+    .tab-list-item{
+     cursor: pointer;   
+    }
+    .tab-list-heading{
+        font-size: 8vw;
+        margin:8vw 0 5vw 0;
+        color: rgb(74, 110, 224);
+    }
+    .tab-active{
+        color:black;
+    }
+    .tab-list-text{
+        font-size: 6vw;
+        margin-top: 0;
+        letter-spacing: -0.2px;
+        margin-bottom: 5vw;
+        color: #4D536E;
+    }
+    .tab-progress-bar{
+        height: 1px;
+        background: #e7e9f5;
+        border-radius: 1px;
+        width: 100%;
+    }
+    .tab-progress-bar-active{
+        height: 1px;
+        background: black;
+        transform-origin: left center;
+        border-radius: 1px;
+        animation: appear 7s linear forwards !important;
+    }
+    
+    
+    .pricing{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #fff !important;
+        width: 100% !important;
+        z-index: 2 !important;
+        margin-top: 30vw;
+    }
+    .pricing-title{
+        font-size: 17vw;
+        width: 80%;
+        text-align: center;
+        margin: 0vw;
+    }
+    
+    .pricing-subtitle{
+    font-size: 8vw;
+    width: 60%;
+    text-align: center;
+    margin-top: 6vw;
+    line-height: 50px;
+    letter-spacing: -0.5px;
+    margin-bottom: 5vw;
+    }
+    .pricing-cards{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0vw;
+    }
+    
+    .pricing-card{
+        width: 160vw;
+        margin: 6vw;
+        display: flex;
+        border: 0px !important;
+        box-shadow: 0 0 !important;
+    }
+    .card-pretext{
+        color: gray;
+        text-transform: uppercase;
+        font-size: 7vw;
+        margin-bottom: 3vw;
+    }
+    .card-title{
+        font-size: 14vw;
+        margin: 0vw;
+    }
+    .card-text{
+        margin: 5vw 0vw 15vw 0 !important;
+        font-size: 7vw;
+        
+        color: black;
+        letter-spacing: -0.1px;
+        line-height: 10vw;
+    }
+    .card-button{
+        padding:4vw 4vw !important;
+        width: 150vw;
+        margin: 7vw 0 !important;
+        border-radius: 2vw !important;
+        font-size: 8vw !important;
+    }
+    .card-list{
+        list-style: none;
+        padding: 0vw;
+        margin-top:6vw !important;
+    }
+    .card-list-item{
+        display: flex;
+        padding: 0vw;
+        margin:8vw 0;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .card-list-text{
+        font-size: 7vw;
+        border-bottom: 1px dotted rgb(200, 200, 200);
+        padding-bottom: 2px;
+        margin: 0vw;
+        margin-left: 0.2vw;
+        cursor: pointer;
+    }
+    .img-tick{
+        width: 12vw;
+        height: 12vw;
+    
+    }
+    .tooltip{
+        background: darkblue;
+    }
+    .tooltip-image{
+        width: 19vw;
+        margin: 0.65vw 0.25vw .25vw 0.25vw;
+    }
+    
+    .button-disabled{
+        background: #f0f2fc !important;
+        color: #c6cbde !important;
+        font-family: 'Inter' !important;
+        cursor: no-drop !important;
+    }
+    
+    @keyframes appear {
+        from{
+            width: 0%;
+        }
+        to{
+            width: 100%;
+        }
+    }
+    @keyframes slidein {
+        from{
+            opacity: 0;
+            margin-top: 2vw;
+        }
+        to{
+            opacity: 1;
+            margin-top: 6vw;
+        }
+    }
+    @keyframes slideinafter {
+        from{
+            opacity: 0;
+            margin-top: 14vw;
+        }
+        to{
+            opacity: 1;
+            margin-top: 18vw;
+        }
+    }
+  }
