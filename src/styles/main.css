@@ -62,9 +62,6 @@ body{
     border-radius: 0.4vw !important;
 }
 
-.carousel{
-
-}
 
 .carousel-bg{
     position: absolute;
@@ -85,12 +82,13 @@ flex-direction: row;
     margin-left: 21vw;
     box-shadow: 0 14px 55px rgb(109 117 141 / 20%);
     margin-top: 6vw;
-    transition: appear 5s alternate 1 !important;
+
+    animation: slidein 0.3s linear forwards !important;
 }
 .carousel-slide-2{
     position: absolute;
     box-shadow: 0 14px 55px rgb(109 117 141 / 20%);
-    
+    animation: slideinafter 0.5s cubic-bezier(.83,.31,.58,.91) forwards !important;
     margin-left: 24vw;
     margin-top: 18vw;
 }
@@ -101,12 +99,15 @@ flex-direction: row;
     list-style: none;
 }
 .tab-list-item{
-    
+ cursor: pointer;   
 }
 .tab-list-heading{
     font-size: 1.05vw;
     margin: 1.3vw 0 0.3vw 0;
     color: rgb(74, 110, 224);
+}
+.tab-active{
+    color:black;
 }
 .tab-list-text{
     font-size: 0.96vw;
@@ -121,6 +122,14 @@ flex-direction: row;
     border-radius: 1px;
     width: 100%;
 }
+.tab-progress-bar-active{
+    height: 1.5px;
+    background: black;
+    transform-origin: left center;
+    border-radius: 1px;
+    animation: appear 7s linear forwards !important;
+}
+
 
 .pricing{
     display: flex;
@@ -220,10 +229,30 @@ margin-bottom: 0.5vw;
 }
 
 @keyframes appear {
-    0%{
-        opacity: 0;
+    from{
+        width: 0%;
     }
-    100%{
+    to{
+        width: 100%;
+    }
+}
+@keyframes slidein {
+    from{
+        opacity: 0;
+        margin-top: 2vw;
+    }
+    to{
         opacity: 1;
+        margin-top: 6vw;
+    }
+}
+@keyframes slideinafter {
+    from{
+        opacity: 0;
+        margin-top: 14vw;
+    }
+    to{
+        opacity: 1;
+        margin-top: 18vw;
     }
 }
