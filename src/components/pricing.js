@@ -3,8 +3,15 @@ import Card from '@mui/material/Card'
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button'
+import Tooltip from '@mui/material/Tooltip';
+
+import grammarly_suggestion from '../assets/img/grammarly_suggestion.svg'
 
 import tick from '../assets/img/tick.jpg'
+
+const SpellingTooltip = (props)=>(
+    <Tooltip {...props}><p className='card-list-text'>Spelling</p></Tooltip>
+)
 
 export default function Pricing() {
   return (
@@ -21,7 +28,11 @@ export default function Pricing() {
             <ul className='card-list'>
                 <li className='card-list-item'>
                     <img className='img-tick' src={tick} alt="" />
-                    <p className='card-list-text'>Spelling</p>
+                    
+                    <SpellingTooltip title={<React.Fragment className='tooltip'>
+                        <img className='tooltip-image' src={grammarly_suggestion} alt="" />
+                        <p>Eliminate spelling errors</p>
+                    </React.Fragment>} placement='bottom-start'></SpellingTooltip>
                 </li>
                 <li className='card-list-item'>
                     <img className='img-tick' src={tick} alt="" />

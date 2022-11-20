@@ -16,28 +16,28 @@ export default function Carousel() {
         <div className='carousel-tabs'>
             <ul className='tabs-list'>
             <li className='tab-list-item'>
-                <h1 className='tab-list-heading'>Clear, confident communication</h1>
+                <h1 className='tab-list-heading tab-1'>Clear, confident communication</h1>
                 <p className='tab-list-text'>Take the guesswork out of great writing.</p>
                 <div className='tab-progress-bar'>
 
                 </div>
             </li>
             <li className='tab-list-item'>
-                <h1 className='tab-list-heading'>Comprehensive real-time feedback</h1>
+                <h1 className='tab-list-heading tab-2'>Comprehensive real-time feedback</h1>
                 <p className='tab-list-text'>Effective writing takes more than good grammar.</p>
             <div className='tab-progress-bar'>
                     
                 </div>
             </li>
             <li className='tab-list-item'>
-                <h1 className='tab-list-heading'>Support you can rely on</h1>
+                <h1 className='tab-list-heading tab-3'>Support you can rely on</h1>
                 <p className='tab-list-text'>Write with a second pair of eyes that never gets tired.</p>
                 <div className='tab-progress-bar'>
                     
                 </div>
             </li>
             <li className='tab-list-item'>
-                <h1 className='tab-list-heading'>Strike the right tone</h1>
+                <h1 className='tab-list-heading tab-4'>Strike the right tone</h1>
                 <p className='tab-list-text'>Make the best impression, every time.</p>
                 <div className='tab-progress-bar'>
                     
