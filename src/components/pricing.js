@@ -10,12 +10,26 @@ import grammarly_suggestion from '../assets/img/grammarly_suggestion.svg'
 import tick from '../assets/img/tick.jpg'
 
 const basic = ['Spelling', 'Grammar', 'Punctuation', 'Conciseness']
+const basictext = ['Eliminate spelling errors',
+'Eliminate grammatical error',
+'Eliminate punctiation errors',	
+'Make every sentence concise and easy to follow']
+
 const premium = ['Clarity-focused sentence rewrites','Tone adjustments'
 ,'Plagarism detection'
 ,'Word choice'
 ,'Formality level'
 ,'Fluency',
 'Additional advanced suggestions']
+const premiumtext=['Automatically rewrite hard-to-read sentences'
+,'Eliminate hedging language or unnecessary qualifiers to sound more confident.'
+,'Ensure your work is fresgh and original by checking it against 16 billion web pages.'
+,'Final vivid words to enileven each and every message.'
+,'Write with appropriate tone, even when youre in a hurry.'
+,'Ensure your word chices sound natural and fluent.'
+,'Fix inonsistencies in spelling and punctuation, adjust the tone of your writing and get additional advanced feedbacks']
+
+
 const SpellingTooltip = (props)=>(
     <Tooltip {...props}><p className='card-list-text'>{props.text}</p></Tooltip>
 )
@@ -39,7 +53,7 @@ export default function Pricing() {
                         <img className='img-tick' src={tick} alt="" />
                         <SpellingTooltip text={item} title={<React.Fragment className='tooltip'>
                             <img className='tooltip-image' src={grammarly_suggestion} alt="" />
-                            <p>Eliminate spelling errors</p>
+                            <p>{basictext[basic.indexOf(item)]}</p>
                         </React.Fragment>} placement='bottom-start'></SpellingTooltip>
                     </li>   
                     )
@@ -65,7 +79,7 @@ export default function Pricing() {
                         <img className='img-tick' src={tick} alt="" />
                         <SpellingTooltip text={item} title={<React.Fragment className='tooltip'>
                             <img className='tooltip-image' src={grammarly_suggestion} alt="" />
-                            <p>Eliminate spelling errors</p>
+                            <p>{premiumtext[premium.indexOf(item)]}</p>
                         </React.Fragment>} placement='bottom-start'></SpellingTooltip>
                     </li>   
                     )
